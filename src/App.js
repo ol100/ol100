@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useRef } from 'react';
 import './App.css';
+import ScrollToTop from './components/Scroll';
+import Header from './components/Header';
+import Section from './components/Section';
+import Card from './components/Cards';
 
 function App() {
+  const services = useRef(null);
+  const blog = useRef(null);
+  const contact = useRef(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ScrollToTop />
+      <Header services = {services} blog={blog} contact={contact}/>
+      <Section reference={services} classname="services" name="Services" />
+      <Section reference={blog} classname="blog" name="Blog" />
+      <Section reference={contact} classname="contact" name="Contact" />
+      <Card />
     </div>
   );
 }
