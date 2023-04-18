@@ -8,7 +8,7 @@ function Header({services,blog,contact}){
       };
 
     return(
-        <div className="hero">
+        <div className="hero space">
         <ul>
           <li onClick={()=>scrollToSection(services)} className='link'>Services</li>
           <li onClick={()=>scrollToSection(blog)} className='link'>Blog</li>

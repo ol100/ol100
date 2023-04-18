@@ -3,7 +3,7 @@ import './App.css';
 import ScrollToTop from './components/Scroll';
 import Header from './components/Header';
 import Section from './components/Section';
-import Card from './components/Cards';
+
 
 function App() {
   const services = useRef(null);
@@ -17,7 +17,6 @@ function App() {
       <Section reference={services} classname="services" name="Services" />
       <Section reference={blog} classname="blog" name="Blog" />
       <Section reference={contact} classname="contact" name="Contact" />
-      <Card />
     </div>
   );
 }
