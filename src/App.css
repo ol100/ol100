@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .link{
   text-decoration: none;
   display: inline;
@@ -11,9 +7,45 @@
   cursor: pointer;
 }
 
+.is-sticky {
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  
+  background-color:rgba(0,0,0,0.5);
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+  opacity:1;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  backdrop-filter: blur(10px); 
+  background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+}
+
+
 .hero{
-  height: 600px;
-  background-color: #caf0f8;
+
+  /*position: relative;*/
+  text-align: center;
+  width: 98%;
+  height: 64px;
+}
+
+.burger{
+  /*text-align: revert;
+  left: 0%;*/
+  padding-left: 1%;
+  position: absolute;
+}
+
+.flexing{
+  display: inline;
+}
+
+.center{
+  
+  padding-top: 0.5%;
+  padding-left: 0;
 }
 
 .space{
@@ -32,16 +64,26 @@
 .services{
   height: 600px;
   background-color: #f5cac3;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #fc0345,#fc03b1,#4a03fc);
+    /* To cover the entire screen */
+    background-size:cover;
+    /* Image position */
+    background-position:center;
+    /* To not repeat the image beyond it's scale */
+    background-repeat:no-repeat;
 }
 
 .blog{
   height: 600px;
   background-color: #d8f3dc;
+  text-align: center;
 }
 
 .contact{
   height: 600px;
   background-color: #ffc6ff;
+  text-align: center;
 }
 
 .top-btn-pos{

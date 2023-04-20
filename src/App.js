@@ -3,6 +3,8 @@ import './App.css';
 import ScrollToTop from './components/Scroll';
 import Header from './components/Header';
 import Section from './components/Section';
+import MainNavigation from './components/Menu';
+import Fake from './components/FakeHeader';
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <Header services = {services} blog={blog} contact={contact}/>
+      <Fake />
       <Section reference={services} classname="services" name="Services" />
       <Section reference={blog} classname="blog" name="Blog" />
       <Section reference={contact} classname="contact" name="Contact" />
