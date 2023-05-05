@@ -66,12 +66,12 @@
   background-color: #f5cac3;
   text-align: center;
   background-image: linear-gradient(to bottom right, #fc0345,#fc03b1,#4a03fc);
-    /* To cover the entire screen */
-    background-size:cover;
-    /* Image position */
-    background-position:center;
-    /* To not repeat the image beyond it's scale */
-    background-repeat:no-repeat;
+  /* To cover the entire screen */
+  background-size:cover;
+  /* Image position */
+  background-position:center;
+  /* To not repeat the image beyond it's scale */
+  background-repeat:no-repeat;
 }
 
 .blog{
