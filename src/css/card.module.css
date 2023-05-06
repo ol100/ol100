@@ -1,9 +1,18 @@
 .card {
-    aspect-ratio: 1 / 1.6;
     border: 0.5vmin solid var(--border);
     cursor: pointer;
     position: relative;
-    width: 56vmin;
+    width: 245px;
+    height: 180px;
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    border-radius: 4px;
+    overflow: hidden;
   }
   
 .carta {
@@ -13,4 +22,8 @@
   margin: 0px;
   padding: 0px;
   place-items: center;
+}
+
+.wrap{
+  display: flex;
 }
